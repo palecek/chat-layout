@@ -14,8 +14,13 @@
 
 .header { 
   background-color: rgba(0, 0, 255, 0.5);
-  position: fixed;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.content { 
+  flex-grow: 1;
 }
